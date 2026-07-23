@@ -1,8 +1,25 @@
 aid: alphora-holdings
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/alphora-holdings.png
 name: Alphora Holdings
-description: 'Alphora Holdings is a company surfaced as a portfolio company of northzone and added to
-  the API Evangelist network as a stub for enrichment. Sector: enterprise; ai. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Alphora (Alphora GmbH / Alphora Holdings) is a Berlin-based, AI-native managed IT
+  services company founded in 2025 and backed by Northzone at the seed stage. Its agentic platform
+  runs IT operations end-to-end for businesses and managed service providers (MSPs) — an integrated
+  IT service desk, managed compliance and documentation, managed AI delivered by forward-deployed
+  engineers, endpoint cybersecurity, user and hardware provisioning, and 24/7 network and cloud
+  monitoring — pairing centralized intelligence with local execution across a shared data lake. The
+  company operates alphora-it.com with a marketing site and active careers portal but does not yet
+  expose a public API, developer portal, SDKs, or machine-readable API specifications.'
 url: https://raw.githubusercontent.com/api-evangelist/alphora-holdings/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-- Enterprise; Ai
+- Enterprise
+- Artificial Intelligence
+- Managed IT Services
+- IT Operations
+- Cybersecurity
+- Compliance
+- Managed Service Providers
+- Germany
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/alphora-holdings-domain-security.yml
 - type: Website
   url: https://alphoraholdings.com
+- type: PrivacyPolicy
+  url: https://alphora-it.com/privacy
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
